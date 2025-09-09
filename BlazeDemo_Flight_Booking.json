@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "d0c22027-742a-4690-8ab3-eef4b66d708a",
+		"name": "Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21019615"
+	},
+	"item": [
+		{
+			"name": "https://blazedemo.com/index.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://blazedemo.com/purchase.php"
+					},
+					{
+						"key": "Cookie",
+						"value": "XSRF-TOKEN=eyJpdiI6IjFLcFROMDA4S0x4cFBHdEdnVXZaYnc9PSIsInZhbHVlIjoiSGZ6MVJoU1ZPdHhxeUx0dlU2T1Q0azJ0K3Vyd2k5anJ5dWpPZmgycmdtbmg2dnM1UzU1eUNMRmdPdHRsZmNUTCIsIm1hYyI6ImViYzdhZTc5Y2I4YzM4NmQ1ZGVlNDk2MmYyNTZhNzc1MGJjNDA2YWYzOWQ3NTVlNzdlNzVmNmJkYjFhZDFlNWMifQ%3D%3D; laravel_session=eyJpdiI6IjQyQWMyWmJscUpTUWdRYzAzRWhNSFE9PSIsInZhbHVlIjoiYzNmQ3NBSmdEdFV5ck5tS3J4QzZFUHU0ejNUUGdmbzZ0cU5pMmN1WjhlQ09mbU5jbkU1RnpVbGR4VGVsZ0diZSIsIm1hYyI6ImYxYjIzNDRhNTQxZjExNTg5YmE1MDllZDYzN2RiZTNhM2Y0YTU3ZDNjNzdjNDUzZWJkNmM5MmYyZTFiMmE1MWIifQ%3D%3D"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "TE",
+						"value": "trailers"
+					}
+				],
+				"url": {
+					"raw": "https://blazedemo.com/index.php",
+					"protocol": "https",
+					"host": [
+						"blazedemo",
+						"com"
+					],
+					"path": [
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://blazedemo.com/reserve.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "blazedemo.com"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9,de;q=0.8"
+					},
+					{
+						"key": "cache-control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "cookie",
+						"value": "__utma=199263485.595399869.1652732243.1652732243.1652732243.1; __utmc=199263485; __utmz=199263485.1652732243.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; __utmb=199263485.1.10.1652732243"
+					},
+					{
+						"key": "origin",
+						"value": "https://blazedemo.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://blazedemo.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Google Chrome\";v=\"101\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fromPort",
+							"value": "Paris",
+							"type": "text"
+						},
+						{
+							"key": "toPort",
+							"value": "Buenos+Aires",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://blazedemo.com/reserve.php",
+					"protocol": "https",
+					"host": [
+						"blazedemo",
+						"com"
+					],
+					"path": [
+						"reserve.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://blazedemo.com/purchase.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Origin",
+						"value": "https://blazedemo.com"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://blazedemo.com/reserve.php"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "TE",
+						"value": "trailers"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "flight",
+							"value": "43",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "472.56",
+							"type": "text"
+						},
+						{
+							"key": "airline",
+							"value": "Virgin+America",
+							"type": "text"
+						},
+						{
+							"key": "fromPort",
+							"value": "Philadelphia",
+							"type": "text"
+						},
+						{
+							"key": "toPort",
+							"value": "Berlin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://blazedemo.com/purchase.php",
+					"protocol": "https",
+					"host": [
+						"blazedemo",
+						"com"
+					],
+					"path": [
+						"purchase.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://blazedemo.com/confirmation.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "blazedemo.com"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9,de;q=0.8"
+					},
+					{
+						"key": "cache-control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "cookie",
+						"value": "__utma=199263485.595399869.1652732243.1652732243.1652732243.1; __utmc=199263485; __utmz=199263485.1652732243.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; __utmb=199263485.3.10.1652732243; arp_scroll_position=539"
+					},
+					{
+						"key": "origin",
+						"value": "https://blazedemo.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://blazedemo.com/purchase.php"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Google Chrome\";v=\"101\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_token",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "inputName",
+							"value": "Hridoy",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "khilkhet",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "zipCode",
+							"value": "1229",
+							"type": "text"
+						},
+						{
+							"key": "cardType",
+							"value": "amex",
+							"type": "text"
+						},
+						{
+							"key": "creditCardNumber",
+							"value": "374245455400126",
+							"type": "text"
+						},
+						{
+							"key": "creditCardMonth",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "creditCardYear",
+							"value": "2023",
+							"type": "text"
+						},
+						{
+							"key": "nameOnCard",
+							"value": "Al+tasin+mahmud",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://blazedemo.com/confirmation.php",
+					"protocol": "https",
+					"host": [
+						"blazedemo",
+						"com"
+					],
+					"path": [
+						"confirmation.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
